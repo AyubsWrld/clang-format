@@ -109,7 +109,7 @@ BraceWrapping:
   BeforeElse:      true
   BeforeLambdaBody: true
   BeforeWhile:     true
-  IndentBraces:    true
+  IndentBraces:    false
   SplitEmptyFunction: true
   SplitEmptyRecord: true
   SplitEmptyNamespace: true
@@ -129,7 +129,10 @@ BreakBeforeCloseBracketIf: false
 BreakBeforeCloseBracketLoop: false
 BreakBeforeCloseBracketSwitch: false
 BreakBeforeConceptDeclarations: Always
-BreakBeforeBraces: GNU
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Always
+  IndentBraces: false
 BreakBeforeInlineASMColon: OnlyMultiline
 BreakBeforeTemplateCloser: false
 BreakBeforeTernaryOperators: true
@@ -179,7 +182,7 @@ IndentCaseBlocks: false
 IndentCaseLabels: false
 IndentExportBlock: true
 IndentExternBlock: AfterExternBlock
-IndentGotoLabels: true
+IndentGotoLabels: false
 IndentPPDirectives: None
 IndentRequiresClause: true
 IndentWidth:     4
@@ -316,4 +319,3 @@ WhitespaceSensitiveMacros:
   - STRINGIZE
 WrapNamespaceBodyWithEmptyLines: Leave
 ...
-
